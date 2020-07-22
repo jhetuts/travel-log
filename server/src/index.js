@@ -12,7 +12,7 @@ const { notFound, errorHandler } = require("./middlewares");
 const logs = require("./api/logs");
 
 mongoose
-  .connect(process.env.MONGO_URL_DEV, {
+  .connect(process.env.MONGODB_URI_DEV, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

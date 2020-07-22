@@ -15,7 +15,8 @@ const EntryForm = ({ location, onClose }) => {
       console.log(createdData);
       onClose();
     } catch (error) {
-      setError(error);
+      console.log("error", error);
+      setError(error.message);
       setLoading(false);
     }
   };
@@ -23,7 +24,9 @@ const EntryForm = ({ location, onClose }) => {
     <div className="entryForm">
       {error && <p className="message error">{error}</p>}
       <form onSubmit={handleSubmit(onSubmit)}>
-        <label htmlFor="">Title</label>
+        <label htmlFor="apiKey">Account Key</label>
+        <input name="apiKey" type="password" required ref={register} />
+        <label htmlFor="title">Title</label>
         <input name="title" type="text" required ref={register} />
         <label htmlFor="description">Description</label>
         <textarea
