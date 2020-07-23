@@ -1,0 +1,27 @@
+{
+  "name": "travel-log",
+  "version": "1.0.0",
+  "description": "* NodeJs/Express\r * Securities\r ## Frontend\r * ReactJs\r * React Hooks\r ## Database\r * MongoDB\r ### Map\r * MapBox",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run dev --prefix server",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhetuts/travel-log.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhetuts/travel-log/issues"
+  },
+  "homepage": "https://github.com/jhetuts/travel-log#readme",
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  },
+  "devDependencies": {}
+}
