@@ -4,7 +4,7 @@
   "description": "* NodeJs/Express\r * Securities\r ## Frontend\r * ReactJs\r * React Hooks\r ## Database\r * MongoDB\r ### Map\r * MapBox",
   "main": "index.js",
   "scripts": {
-    "server": "npm run dev --prefix server",
+    "server": "npm run start --prefix server",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "npm install --prefix client && npm run build --prefix client && npm run server"
